@@ -6,7 +6,6 @@
 using namespace std;
 
 HWND hwnd;
-
 int sum = 0;//用於表示目前已經點開的格子數
 
 void drawmap(int map[][12], IMAGE* img);
