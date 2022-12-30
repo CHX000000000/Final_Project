@@ -1,2 +1,2 @@
 ﻿  main.cpp
-  final_project.vcxproj -> D:\NTUT\程式\final project\final_project\Debug\final_project.exe
+c:\users\allen\onedrive\桌面\final_project\final_project\main.cpp(4): fatal error C1083: 無法開啟包含檔案: 'graphics.h': No such file or directory
