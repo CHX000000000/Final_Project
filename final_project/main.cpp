@@ -119,16 +119,22 @@ int mousedown(int map[][(A + 2)])
 			{
 				continue;
 			}
-			if (map[mi][mj] > 25)       //再次點選取消flag
+			if ((map[mi][mj] > 25)&&(flag <= BOOM))       //再次點選取消flag
 			{
 				map[mi][mj] -= 30;
 				flag--;
 			}
-			else
+			
+			else if (map[mi][mj] < 25 && (flag < BOOM))
 			{
 				flag++;
 				map[mi][mj] += 30;
 			}
+			else 
+			{
+				MessageBox(hwnd, "旗子數量大於地雷！", "error", MB_OK);
+			}
+			
 			return  map[mi][mj];
 			break;
 		}
